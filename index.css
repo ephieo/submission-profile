@@ -7,3 +7,9 @@ body{
 background:#1e1e1e;
 font-family:'nova cut', cursive;
 }
+.main{
+max-width:800px;
+}
+.image{
+width:400px;
+}

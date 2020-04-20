@@ -45,3 +45,11 @@ width:100%;
   height:600px;
   object-fit:cover;
 }
+.btn{
+position:absolute;
+  top:80%;
+  transform:translateY(-50%);
+  background:transparent;
+  border:0;
+  cursor:pointer;
+}

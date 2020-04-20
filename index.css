@@ -13,3 +13,12 @@ max-width:800px;
 .image{
 width:400px;
 }
+.container {
+width:80%;
+  height:600px;
+  margin : 0 auto;
+  position:absolute;
+  border-width:3px;
+  border-color:#afdfff;
+  border-style:dashed;
+}

@@ -53,3 +53,19 @@ position:absolute;
   border:0;
   cursor:pointer;
 }
+.left-btn{
+left:-35px;
+  top:287px;
+}
+.leftbut{
+width:25px;
+}
+.right-btn{
+  right:-35px;
+  top:300px;
+}
+
+.rightbut{
+width:27px;
+}
+

@@ -22,3 +22,8 @@ width:80%;
   border-color:#afdfff;
   border-style:dashed;
 }
+.carousel-container{
+width:100%;
+  height:600px;
+  position:relative;
+}

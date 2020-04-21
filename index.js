@@ -6,4 +6,7 @@ for (let i=0; i<slides.length;i++){
 slides[i].style.left=slideWidth * i +"px";
 }
 }
+const slideWidth = slides[0].getBoundClientRect().width;
+positionSlides(slides,slideWidth);
+const currentSlide = carousel.querySelector(".active");
 </script>

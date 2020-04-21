@@ -9,6 +9,7 @@ font-family:'nova cut', cursive;
 }
 .main{
 max-width:800px;
+  height:700px;
 }
 .image{
 width:400px;

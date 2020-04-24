@@ -18,4 +18,4 @@ positionSlides(slides);
 //adding an event listener to the nextButton.
 nextButton.addEventListener("click",function(){
   const currentSlide = carousel.querySelector(".active")
-  }
+  });

@@ -23,4 +23,6 @@ nextButton.addEventListener("click",function(){
 const nextSlide = currentSlide.nextElementSibling;
   //need to move the slide to the left using translate X along the x-axis
 const position = nextSlide.style.left = `translateX(-${position})`;
+  currentSlide.classList.remove(".active");
+  nextSlide.classList.add(".active");
   });

@@ -17,5 +17,10 @@ positionSlides(slides);
 
 //adding an event listener to the nextButton.
 nextButton.addEventListener("click",function(){
+  // need to select the current active slide 
   const currentSlide = carousel.querySelector(".active")
+  // need to select the next slide 
+const nextSlide = currentSlide.nextElementSibling;
+  //need to move the slide to the left using translate X along the x-axis
+const position = nextSlide.style.left = `translateX(-${position})`;
   });

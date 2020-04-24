@@ -6,10 +6,10 @@ const slides = [...carousel.children];
 // I needed to calculate the slideWidth so that the images will be lined horizontally seperated by the image width.
 let slideWidth = slides[0].getBoundingClientRect().width;
 // once I have the width I can calculate the distance between slides. 
-function positionSlides(slides,slideWidth){
+function positionSlides(slides){
 for (let i=0; i<slides.length;i++){
 slides[i].style.left=slideWidth * i +"px";
 }
 }
-
+positionSlides(slides);
 

@@ -22,7 +22,8 @@ nextButton.addEventListener("click",function(){
   // need to select the next slide 
 const nextSlide = currentSlide.nextElementSibling;
   //need to move the slide to the left using translate X along the x-axis
-const position = nextSlide.style.left = `translateX(-${position})`;
+const position = nextSlide.style.left;
+  carousel.style.transform = `translateX(-${position})`;
   currentSlide.classList.remove(".active");
   nextSlide.classList.add(".active");
   });

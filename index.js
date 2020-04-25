@@ -45,7 +45,7 @@ const prevSlide = currentSlide.previousElementSibling;
    hideButton(prevSlide,slides);
   });
 
-nav.addEventListner("click",function(e){
+nav.addEventListener("click",function(e){
   const targetdot = e.target;
   //need to select the targetSlide/currentSlide
   const currentSlide = carousel.querySelector(".active");

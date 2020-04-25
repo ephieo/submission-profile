@@ -100,3 +100,16 @@ background:rgba(255,255,255,1);
 .hide{
 display:none;
 }
+@media screen and (max-width:125px){
+
+ .container{
+width:300px;
+}
+}
+
+@media screen and (max-height:400px){
+
+ .container{
+height:700px;
+}
+}

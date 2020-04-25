@@ -6,6 +6,8 @@ const nextButton = document.querySelector(".right-btn");
 const prevButton = document.querySelector(".left-btn");
 // need to select the nav class using querySelector. 
 const nav = document.querySelector(".nav");
+// turn nav into an array called dots.
+const dots = [...nav.children];
 //turning the children of carousel into an array.
 const slides = [...carousel.children];
 // then using a for loop to loop through all the slides from index/i[0] onwards to the end of it's length. 
@@ -42,6 +44,11 @@ const prevSlide = currentSlide.previousElementSibling;
 moveSlide(carousel,currentSlide,prevSlide);
    hideButton(prevSlide,slides);
   });
+
+nav.addEventListner("click",function(e){
+
+}
+               );
 
 // creating a moveSlide function to contain the info for moving the slide 
 function moveSlide (carousel,currentSlide,targetSlide) {

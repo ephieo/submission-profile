@@ -46,7 +46,7 @@ moveSlide(carousel,currentSlide,prevSlide);
   });
 
 nav.addEventListner("click",function(e){
-
+console.log(e);
 }
                );
 

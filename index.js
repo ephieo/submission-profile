@@ -51,6 +51,8 @@ nav.addEventListner("click",function(e){
 let targetDotIndex = findIndex(targetdot,dots);
   // making the slide index the targetSlide. 
   const targetSlide = slides[targetDotIndex];
+  // using moveSlide to sellect currentSlide 
+  moveSlide(carousel,currentSlide,targetSlide);
 });
 
 // creating a moveSlide function to contain the info for moving the slide.

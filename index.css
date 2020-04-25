@@ -29,6 +29,7 @@ width:82%;
   border-color:#afdfff;
   border-style:dashed;
   left:10%;
+  overflow:hideen;
 }
 .carousel-container{
 width:100%;

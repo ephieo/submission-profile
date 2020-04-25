@@ -47,6 +47,8 @@ const prevSlide = currentSlide.previousElementSibling;
 
 nav.addEventListner("click",function(e){
   const targetdot = e.target;
+  //need to select the targetSlide/currentSlide
+  const currentSlide = carousel.querySelector(".active");
   // creating a variable with the function findIndex.
 let targetDotIndex = findIndex(targetdot,dots);
   // making the slide index the targetSlide. 

@@ -81,3 +81,10 @@ nextButton.classList.remove("hide");
 prevButton.classList.remove("hide");
 }
 };
+//need a function to find the index of each slide to match the dots
+function findIndex (item,items){
+for (let index=0;index<items.length;index++){
+if(index === items[index]){
+   return index;}
+}  
+}

@@ -47,10 +47,13 @@ const prevSlide = currentSlide.previousElementSibling;
 
 nav.addEventListner("click",function(e){
   const targetdot = e.target;
-let index = findIndex(targetdot,dots);
+  // creating a variable with the function findIndex.
+let targetDotIndex = findIndex(targetdot,dots);
+  // making the slide index the targetSlide. 
+  const targetSlide = slides[targetDotIndex];
 });
 
-// creating a moveSlide function to contain the info for moving the slide 
+// creating a moveSlide function to contain the info for moving the slide.
 function moveSlide (carousel,currentSlide,targetSlide) {
   // first we need to find the position of the slide 
   const position = targetSlide.style.left;

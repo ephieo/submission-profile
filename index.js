@@ -46,5 +46,5 @@ function moveSlide (carousel,currentSlide,tragetSlide) {
     //need to move the slide to the left using translate X along the x-axis
   carousel.style.transform = `translateX(-${position})`;
   currentSlide.classList.remove("active");
-  nextSlide.classList.remove("active");
+  targetSlide.classList.remove("active");
 };

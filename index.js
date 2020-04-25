@@ -42,3 +42,13 @@ const position = prevSlide.style.left;
   currentSlide.classList.add("active");
   prevSlide.classList.remove("active");
   });
+
+// creating a moveSlide function to contain the info for moving the slide 
+function moveSlide (carousel,currentSlide,tragetSlide) {
+  // first we need to find the position of the slide 
+  const position = targetSlide.style.left;
+  //then we use translate X to shift the slide 
+  carousel.style.transform = `translateX(-${position})`;
+  currentSlide.classList.remove("active");
+  nextSlide.classList.remove("active");
+};

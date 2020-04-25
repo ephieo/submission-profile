@@ -46,9 +46,9 @@ const prevSlide = currentSlide.previousElementSibling;
   });
 
 nav.addEventListner("click",function(e){
-console.log(e);
-}
-               );
+  const targetdot = e.target;
+let index = findIndex(targetdot,dots);
+});
 
 // creating a moveSlide function to contain the info for moving the slide 
 function moveSlide (carousel,currentSlide,targetSlide) {

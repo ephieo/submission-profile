@@ -26,6 +26,19 @@ const nextSlide = currentSlide.nextElementSibling;
   //need to move the slide to the left using translate X along the x-axis
 const position = nextSlide.style.left;
   carousel.style.transform = `translateX(-${position})`;
-  currentSlide.classList.remove(".active");
-  nextSlide.classList.add(".active");
+  currentSlide.classList.remove("active");
+  nextSlide.classList.add("active");
+  });
+
+//adding an event listener to the nextButton.
+prevButton.addEventListener("click",function(){
+  // need to select the current active slide 
+  const currentSlide = carousel.querySelector(".active")
+  // need to select the prevslide 
+const prevSlide = currentSlide.previousElementSibling;
+  //need to move the slide to the left using translate X along the x-axis
+const position = prevSlide.style.left;
+  carousel.style.transform = `translateX(-${position})`;
+  currentSlide.classList.add("active");
+  prevSlide.classList.remove("active");
   });

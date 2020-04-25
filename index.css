@@ -29,7 +29,7 @@ width:82%;
   border-color:#afdfff;
   border-style:dashed;
   left:10%;
-  overflow:hideen;
+  overflow:hidden;
 }
 .carousel-container{
 width:100%;
@@ -101,14 +101,14 @@ background:rgba(255,255,255,1);
 .hide{
 display:none;
 }
-@media screen and (max-width:125px){
+@media screen and (max-width:500px){
 
  .container{
 width:300px;
 }
 }
 
-@media screen and (max-height:400px){
+@media screen and (max-height:800px){
 
  .container{
 height:700px;

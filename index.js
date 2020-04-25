@@ -4,6 +4,8 @@ const carousel = document.querySelector(".carousel");
 const nextButton = document.querySelector(".right-btn");
 //selecting prev button 
 const prevButton = document.querySelector(".left-btn");
+// need to select the nav class using querySelector. 
+const nav = document.querySelector(".nav");
 //turning the children of carousel into an array.
 const slides = [...carousel.children];
 // then using a for loop to loop through all the slides from index/i[0] onwards to the end of it's length. 

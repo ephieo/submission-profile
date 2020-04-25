@@ -48,3 +48,8 @@ function moveSlide (carousel,currentSlide,tragetSlide) {
   currentSlide.classList.remove("active");
   targetSlide.classList.remove("active");
 };
+
+function toggleActive (current,target){
+current.classlist.remove("active");
+target.classlist.remove("active");
+};

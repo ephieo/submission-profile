@@ -39,7 +39,7 @@ moveSlide(carousel,currentSlide,prevSlide);
   });
 
 // creating a moveSlide function to contain the info for moving the slide 
-function moveSlide (carousel,currentSlide,tragetSlide) {
+function moveSlide (carousel,currentSlide,targetSlide) {
   // first we need to find the position of the slide 
   const position = targetSlide.style.left;
   //then we use translate X to shift the slide 

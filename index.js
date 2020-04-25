@@ -10,6 +10,7 @@ const slides = [...carousel.children];
 // I needed to calculate the slideWidth so that the images will be lined horizontally seperated by the image width.
 let slideWidth = slides[0].getBoundingClientRect().width;
 // once I have the width I can calculate the distance between slides. 
+
 function positionSlides(slides){
 for (let i=0; i<slides.length;i++){
 slides[i].style.left=slideWidth * i +"px";
@@ -52,4 +53,21 @@ function moveSlide (carousel,currentSlide,targetSlide) {
 function toggleActive (current,target){
 current.classlist.remove("active");
 target.classlist.remove("active");
+};
+
+//we then need a function to hide the next and previous buttons at the beggining and end of the image carousel. 
+function hideButton (targetSlide,slides){
+  //if the target slide is the first slide in the carousel at index[0] then hide the prevButton and show the nextButton
+if(targetSlide === slides[0]){
+prevButton.classList.add("hide");
+nextButton.classList.remove("hide");
+  // if its the last slide in the carousel then hide the nextButton and show the prevButton.
+}else if (targetSlide === slides[slides.length - 1]){
+nextButton.classList.add("hide");
+prevButton.classList.remove("hide");
+  // if the images are neithe the first nor last slide then show both buttons 
+}else{
+nextButton.classList.remove("hide");
+prevButton.classList.remove("hide");
+}
 };

@@ -67,7 +67,7 @@ function moveSlide (carousel,currentSlide,targetSlide) {
  toggleActive (currentSlide,targetSlide);
 };
 
-function toggleActive (current,target){
+function toggleActive (currentSlide,targetSlide){
 current.classlist.remove("active");
 target.classlist.remove("active");
 };

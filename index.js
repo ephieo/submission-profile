@@ -41,7 +41,7 @@ prevButton.addEventListener("click",function(){
 const prevSlide = currentSlide.previousElementSibling;
   
   //calling on the moveSlide function and making the targetSlide = prevSlide.
-moveSlide(carousel,currentSlide,prevSlide);
+   moveSlide(carousel,currentSlide,prevSlide);
    hideButton(prevSlide,slides);
   });
 
@@ -57,8 +57,7 @@ function moveSlide (carousel,currentSlide,targetSlide) {
   //then we use translate X to shift the slide 
     //need to move the slide to the left using translate X along the x-axis
   carousel.style.transform = `translateX(-${position})`;
-  currentSlide.classList.remove("active");
-  targetSlide.classList.remove("active");
+ toggleActive (currentSlide,targetSlide);
 };
 
 function toggleActive (current,target){

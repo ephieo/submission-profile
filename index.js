@@ -26,6 +26,7 @@ nextButton.addEventListener("click",function(){
 const nextSlide = currentSlide.nextElementSibling;
    //calling on the moveSlide function and making the targetSlide = prevSlide. 
   moveSlide(carousel,currentSlide,nextSlide);
+  hideButton(nextSlide,slides);
   });
 
 //adding an event listener to the nextButton.
@@ -37,6 +38,7 @@ const prevSlide = currentSlide.previousElementSibling;
   
   //calling on the moveSlide function and making the targetSlide = prevSlide.
 moveSlide(carousel,currentSlide,prevSlide);
+   hideButton(prevSlide,slides);
   });
 
 // creating a moveSlide function to contain the info for moving the slide 

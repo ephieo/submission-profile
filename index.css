@@ -101,6 +101,13 @@ background:rgba(255,255,255,1);
 .hide{
 display:none;
 }
+
+.links {
+width:100%;
+height:30px:
+background:rgba(	201, 233, 255,0.3);
+display:flex;
+}
 @media all and (max-width:500px){
 
  .container{
@@ -114,3 +121,4 @@ width:300px;
 height:700px;
 }
 }
+

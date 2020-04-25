@@ -23,11 +23,8 @@ nextButton.addEventListener("click",function(){
   const currentSlide = carousel.querySelector(".active")
   // need to select the next slide 
 const nextSlide = currentSlide.nextElementSibling;
-  //need to move the slide to the left using translate X along the x-axis
-const position = nextSlide.style.left;
-  carousel.style.transform = `translateX(-${position})`;
-  currentSlide.classList.remove("active");
-  nextSlide.classList.add("active");
+   //calling on the moveSlide function and making the targetSlide = prevSlide. 
+  moveSlide(carousel,currentSlide,nextSlide);
   });
 
 //adding an event listener to the nextButton.
@@ -36,11 +33,9 @@ prevButton.addEventListener("click",function(){
   const currentSlide = carousel.querySelector(".active")
   // need to select the prevslide 
 const prevSlide = currentSlide.previousElementSibling;
-  //need to move the slide to the left using translate X along the x-axis
-const position = prevSlide.style.left;
-  carousel.style.transform = `translateX(-${position})`;
-  currentSlide.classList.add("active");
-  prevSlide.classList.remove("active");
+  
+  //calling on the moveSlide function and making the targetSlide = prevSlide.
+moveSlide(carousel,currentSlide,prevSlide);
   });
 
 // creating a moveSlide function to contain the info for moving the slide 
@@ -48,6 +43,7 @@ function moveSlide (carousel,currentSlide,tragetSlide) {
   // first we need to find the position of the slide 
   const position = targetSlide.style.left;
   //then we use translate X to shift the slide 
+    //need to move the slide to the left using translate X along the x-axis
   carousel.style.transform = `translateX(-${position})`;
   currentSlide.classList.remove("active");
   nextSlide.classList.remove("active");

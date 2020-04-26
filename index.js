@@ -46,6 +46,8 @@ const prevSlide = currentSlide.previousElementSibling;
   });
 
 nav.addEventListener("click",function(e){
+  // add an if statement so that it only runs when you click on a dot.
+  if(e.target === nav)return;
   const targetDot = e.target;
   // need to select the current dot 
   const currentDot = nav.querySelector(".active");

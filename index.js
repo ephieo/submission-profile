@@ -57,6 +57,8 @@ let targetDotIndex = findIndex(targetDot,dots);
   const targetSlide = slides[targetDotIndex];
   // using moveSlide to sellect currentSlide 
   moveSlide(carousel,currentSlide,targetSlide);
+  toggleActive(currentDot,targetDot);
+  hideButton(targetSlide,slides);
 });
 
 // creating a moveSlide function to contain the info for moving the slide.
@@ -65,13 +67,13 @@ function moveSlide (carousel,currentSlide,targetSlide) {
   const position = targetSlide.style.left;
   //then we use translate X to shift the slide 
     //need to move the slide to the left using translate X along the x-axis
-  carousel.style.transform = `translateX(-${position})`;
+ carousel.style.transform = `translateX(-${position})`;
  toggleActive (currentSlide,targetSlide);
 };
 
-function toggleActive (currentSlide,targetSlide){
-currentSlide.classlist.remove("active");
-targetSlide.classlist.remove("active");
+function toggleActive (current,target){
+current.classList.remove("active");
+target.classList.remove("active");
 };
 
 //we then need a function to hide the next and previous buttons at the beggining and end of the image carousel. 

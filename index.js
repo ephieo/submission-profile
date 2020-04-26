@@ -16,8 +16,8 @@ let slideWidth = slides[0].getBoundingClientRect().width;
 // once I have the width I can calculate the distance between slides. 
 
 function positionSlides(slides){
-for (let i=0; i<slides.length;i++){
-slides[i].style.left=slideWidth * i +"px";
+for (let index=0; index<slides.length;index++){
+slides[index].style.left=slideWidth * index +"px";
 }
 }
 positionSlides(slides);
@@ -29,7 +29,7 @@ nextButton.addEventListener("click",function(){
   // need to select the current active slide 
   const currentSlide = carousel.querySelector(".active")
   // need to select the next slide 
-const nextSlide = currentSlide.nextElementSibling;
+ const nextSlide = currentSlide.nextElementSibling;
    //calling on the moveSlide function and making the targetSlide = prevSlide. 
   moveSlide(carousel,currentSlide,nextSlide);
   hideButton(nextSlide,slides);
@@ -108,8 +108,8 @@ nextButton.classList.add("hide");
 prevButton.classList.remove("hide");
   // if the images are neithe the first nor last slide then show both buttons 
 }else{
-nextButton.classList.remove("hide");
 prevButton.classList.remove("hide");
+nextButton.classList.remove("hide");
 }
 };
 //need a function to find the index of each slide to match the dots

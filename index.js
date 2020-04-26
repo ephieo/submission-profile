@@ -37,7 +37,6 @@ const nextSlide = currentSlide.nextElementSibling;
   });
 
 
-
 //adding an event listener to the nextButton.
 prevButton.addEventListener("click",function(){
   // need to select the current active slide 

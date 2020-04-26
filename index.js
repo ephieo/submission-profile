@@ -22,6 +22,8 @@ slides[i].style.left=slideWidth * i +"px";
 }
 positionSlides(slides);
 
+
+
 //adding an event listener to the nextButton.
 nextButton.addEventListener("click",function(){
   // need to select the current active slide 
@@ -31,7 +33,10 @@ const nextSlide = currentSlide.nextElementSibling;
    //calling on the moveSlide function and making the targetSlide = prevSlide. 
   moveSlide(carousel,currentSlide,nextSlide);
   hideButton(nextSlide,slides);
+  moveToDot(nextSlide,slides,nav,dots);
   });
+
+
 
 //adding an event listener to the nextButton.
 prevButton.addEventListener("click",function(){
@@ -43,11 +48,15 @@ const prevSlide = currentSlide.previousElementSibling;
   //calling on the moveSlide function and making the targetSlide = prevSlide.
    moveSlide(carousel,currentSlide,prevSlide);
    hideButton(prevSlide,slides);
+  moveToDot (prevSlide,slides,nav,dots);
   });
+
+
 
 nav.addEventListener("click",function(e){
   // add an if statement so that it only runs when you click on a dot.
   if(e.target === nav)return;
+  // to select the clicked dot.
   const targetDot = e.target;
   // need to select the current dot 
   const currentDot = nav.querySelector(".active");
@@ -62,6 +71,16 @@ let targetDotIndex = findIndex(targetDot,dots);
   toggleActive(currentDot,targetDot);
   hideButton(targetSlide,slides);
 });
+
+
+//create a function to move the dots as you navigate with the buttons
+function moveToDot (targetSlide,slides,nav,dots){
+  let slideIndex = findIndex(targetSlide,slides);
+const currentDot = nav.querySelector(".active");
+  const targetDot = dots[slideIndex];
+  toggleActive(currentDot,targetDot);
+}
+
 
 // creating a moveSlide function to contain the info for moving the slide.
 function moveSlide (carousel,currentSlide,targetSlide) {

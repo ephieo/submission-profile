@@ -66,7 +66,7 @@ let targetDotIndex = findIndex(targetDot,dots);
   // making the slide index the targetSlide. 
   const targetSlide = slides[targetDotIndex];
   // using moveSlide to sellect currentSlide 
-  moveSlide(carousel,currentSlide,targetSlide);
+  moveSlide(carousel, currentSlide, targetSlide);
   toggleActive(currentDot,targetDot);
   hideButton(targetSlide,slides);
 });

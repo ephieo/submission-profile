@@ -93,7 +93,7 @@ function moveSlide (carousel,currentSlide,targetSlide) {
 
 function toggleActive (current,target){
 current.classList.remove("active");
-target.classList.remove("active");
+target.classList.add("active");
 };
 
 //we then need a function to hide the next and previous buttons at the beggining and end of the image carousel. 

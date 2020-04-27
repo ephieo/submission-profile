@@ -121,9 +121,19 @@ width:300px;
 height:700px;
 }
 }
+.second-container{
+display:flex;
+}
 .bio{
+width:50%;
+  order:1;
+}
+.biotext{
 font-size:12px;
-  color:#afdfff;
-  
+  color:#afdfff; 
+}
+.selfimage{
+width:50%;
+  order:2;
 }
 

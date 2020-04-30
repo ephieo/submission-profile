@@ -19,10 +19,9 @@ function positionSlides(slides){
 for (let index=0; index<slides.length;index++){
 slides[index].style.left=slideWidth * index +"px";
 }
+
 }
 positionSlides(slides);
-
-
 
 //adding an event listener to the nextButton.
 nextButton.addEventListener("click",function(){
@@ -36,6 +35,7 @@ nextButton.addEventListener("click",function(){
   moveToDot(nextSlide,slides,nav,dots);
   });
 
+  setTimeout(nextButton , 2000);
 
 //adding an event listener to the nextButton.
 prevButton.addEventListener("click",function(){
@@ -77,7 +77,9 @@ function moveToDot (targetSlide,slides,nav,dots){
   let slideIndex = findIndex(targetSlide,slides);
 const currentDot = nav.querySelector(".active");
   const targetDot = dots[slideIndex];
+  console.log(slideIndex);
   toggleActive(currentDot,targetDot);
+  
 }
 
 
@@ -90,6 +92,7 @@ function moveSlide (carousel,currentSlide,targetSlide) {
  carousel.style.transform = `translateX(-${position})`;
  toggleActive (currentSlide,targetSlide);
 };
+
 
 function toggleActive (current,target){
 current.classList.remove("active");
@@ -115,7 +118,7 @@ nextButton.classList.remove("hide");
 //need a function to find the index of each slide to match the dots
 function findIndex (item,items){
 for (let index=0;index<items.length;index++){
-if(index === items[index]){
+if(item === items[index]){
    return index;}
 }  
 }

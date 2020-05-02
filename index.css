@@ -4,6 +4,10 @@ background:#1e1e1e;
 color:#cbff7c;
 font-family:'nova cut', cursive;
 }
+body{
+  background:#1e1e1e;
+  font-family:'nova cut', cursive;
+  }
 #name{
   color:#afdfff;
   float:left;
@@ -26,10 +30,7 @@ font-family:'nova cut', cursive;
 
  
 }
-body{
-background:#1e1e1e;
-font-family:'nova cut', cursive;
-}
+
 .main{
   display:grid;
  grid-template-rows:500px 500px;
@@ -125,19 +126,6 @@ background:rgba(255,255,255,1);
 display:none;
 }
 
-@media all and (max-width:500px){
-
- .container{
-width:300px;
-}
-}
-
-@media all and (max-height:800px){
-
- .container{
-height:700px;
-}
-}
 .second-container{
 display:flex;
 }
@@ -166,3 +154,16 @@ width:50%;
   font-size:20px;
   color:#afdfff;
 }
+@media all and (max-width:500px){
+
+  .container{
+ width:300px;
+ }
+ }
+ 
+ @media all and (max-height:800px){
+ 
+  .container{
+ height:700px;
+ }
+ }

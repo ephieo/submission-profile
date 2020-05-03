@@ -99,7 +99,7 @@ body{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  flex-basis:100%;
+  /* flex-basis:100%; */
   align-items:space-around;
   padding:100px;
   overflow:scroll;
@@ -211,12 +211,14 @@ justify-content:space-around;
 padding:150px;
 width:100%;
 height:500px;
+overflow:scroll;
 flex-direction:row;
 /* border: 1px dashed white; */
 
 }
 .second-container{
   display:flex;
+  overflow:scroll;
   padding:50px 0px;
   margin: 100px;
   flex-wrap: wrap;
@@ -276,6 +278,10 @@ font-size:18px;
   padding:0px;
   color:#1e1e1e;
   
+}
+#naver{
+  color:#afdfff;
+  text-decoration:none;
 }
 .biotext :hover{
   font-size:23px;
@@ -423,17 +429,30 @@ align-items:center;
   outline:none;
 }
 
-/* #play-btn, #pause-btn{
-  cursor:pointer;
-  background:transparent;
-  font-size:20px;
-  border:none;
-  padding:10px; 
-  color:orange;
-  border : 1px solid orange;
-  border-radius: 30px;
-} */
 
-/* #play-btn:focus #pause-btn:focus{
-  outline:none;
-} */
+@media screen and (max-width:700px){
+
+  .body{
+ width:400px;
+ }
+ .main{
+  width:400px;
+  }
+  .box1{
+    width:500px;
+  }
+  .box2{
+    width:500px;
+  }
+  .box2{
+    width:500px;
+  }
+ 
+ } 
+ 
+ /* @media all and (max-height:800px){
+ 
+  .container{
+ height:700px;
+ }
+ }

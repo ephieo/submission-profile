@@ -271,14 +271,14 @@ width:400px;
   
 }
 .biotext{
-font-size:10px;
+font-size:18px;
   color:#afdfff; 
   padding:0px;
   color:#1e1e1e;
   
 }
 .biotext :hover{
-  font-size:15px;
+  font-size:23px;
   /* padding:0px; */
   /* border : 1px dashed #afdfff; */
   /* border-radius:20px; */

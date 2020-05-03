@@ -188,7 +188,7 @@ display:none;
   background:#c9e5ed;
 display:flex;
 flex-wrap:wrap;
-align-items: center;
+justify-content:space-around;
 padding:150px;
 width:100%;
 height:500px;
@@ -370,7 +370,7 @@ font-size:10px;
 
 
 }
-.slides{
+.bslides{
   display:flex;
   width:200px;
   height:400px;

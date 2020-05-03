@@ -35,7 +35,7 @@ nextButton.addEventListener("click",function(){
   moveToDot(nextSlide,slides,nav,dots);
   });
 
-  setTimeout(nextButton , 2000);
+  
 
 //adding an event listener to the nextButton.
 prevButton.addEventListener("click",function(){

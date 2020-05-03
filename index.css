@@ -30,7 +30,7 @@ body{
   display:flex;
   flex-direction:row;
   justify-content:center;
-  flex-wrap:wrap;
+  flex-flow:row wrap;
   font-size-adjust:initial;
   z-index:0;
   }
@@ -96,9 +96,9 @@ body{
 .main{
   width:90%;
   height:600px;
-  display:flex;
+  /* display:flex;
   flex-direction:row;
-  flex-wrap:wrap;
+  flex-flow: row wrap; */
   /* flex-basis:100%; */
   align-items:space-around;
   padding:100px;
@@ -113,6 +113,7 @@ width:400px;
   height:600px;;
   /* margin : 0px auto; */
   right:10%;
+  top:160px;
   position:absolute;
   border-width:3px;
   border-color:#afdfff;
@@ -290,10 +291,14 @@ font-size:18px;
   /* border-radius:20px; */
 }
 .bioone{
+  display:flex;
+  flex-wrap:wrap;
+  
   width:550px;
   font-size:12px;
   padding:100px;
-  margin:0px 0px;
+  margin-left:0px;
+  margin-top:0px;
   /* border: 1px dashed white; */
   order:1;
   /* border : 1px dashed #afdfff; */
@@ -444,9 +449,10 @@ align-items:center;
   .box2{
     width:500px;
   }
-  .box2{
+  .box3{
     width:500px;
   }
+  
  
  } 
  

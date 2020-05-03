@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:orange;
+}
+.img{
+    width:170px;
+    height:300px;
+}
+/* making it line up next to each other  */
+.container{
+    margin: 0 auto;
+    width:300px;
+    height:400px;
+    position:relative;
+    border : 1px solid orange;
+    border-radius: 30px;
+    overflow:hidden;
+
+   
+
+
+
+}
+.slides{
+    display:flex;
+    width:200px;
+    height:400px;
+    
+    
+}
+.slide-controls{
+position:absolute;
+top:83%;
+right:0;
+transform: translateY(-50%);
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+#next-btn, #prev-btn{
+    cursor:pointer;
+    background:transparent;
+    font-size:20px;
+    border:none;
+    padding:10px; 
+    color:orange;
+    border : 1px solid orange;
+    border-radius: 30px;
+}
+
+#next-btn:focus #prev-btn:focus{
+    outline:none;
+}
+
+#play-btn, #pause-btn{
+    cursor:pointer;
+    background:transparent;
+    font-size:20px;
+    border:none;
+    padding:10px; 
+    color:orange;
+    border : 1px solid orange;
+    border-radius: 30px;
+}
+
+#play-btn:focus #pause-btn:focus{
+    outline:none;
+}
